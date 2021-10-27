@@ -28,7 +28,7 @@ foreach ($request_json['events'] as $event)
 				
 				// เสียชีวิต 57 คน
 				
-				$reply_message = "เสียชีวิต" $result_json["new_death"] . "คน" ;
+				$reply_message = "เสียชีวิต" . $result_json["new_death"] . "คน" ;
 				
 				
 			}
