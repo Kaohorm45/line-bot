@@ -19,17 +19,12 @@ foreach ($request_json['events'] as $event)
 			if("ขอชื่อผู้พัฒนาระบบ"==$text){
 				$reply_message = "นางสาวปุญญพัฒน์ สัญญากิจ" ;
 			}
-			if(("covid-19"==$text) || ("Covid-19"==$text) || ("สถานการณ์โควิด"==$text) || ("โควิดวันนี้"==$text) ){
-				$reply_message = "ตายเพียบ" ;
+			if(("เส้นทางไปมหาวิทยาลัยพระจอมเกล้าธนบุรี"==$text) || ("ไปมหาลัยบางมด"==$text) || ("เส้นทางไปมหาวิทยาลับยางมด"==$text) || ("ไปมจธ."==$text) ){
+				$reply_message = "เส้นทางไปมหาวิทยาลัยพระจอมเกล้าธนบุรี" ;
 				
-				$result = file_get_contents('https://covid19.ddc.moph.go.th/api/Cases/today-cases-all');   // Get request content
+				$result = https://www.google.com/maps/place/King+Mongkut%E2%80%99s+University+of+Technology+Thonburi/@13.6512734,100.4943349,17z/data=!3m1!4b1!4m5!3m4!1s0x30e2a251bb6b0cf1:0xf656e94ff13324ad!8m2!3d13.6512734!4d100.4965236?hl=en');   // Get request content
 
-                                $result_json = json_decode($result, true);   // Decode JSON request
-				
-				// เสียชีวิต 57 คน
-				
-				$reply_message = "เสียชีวิต" . $result_json["new_death"] . "คน" ;
-				
+                               
 				
 			}
 		
