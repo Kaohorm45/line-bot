@@ -26,8 +26,11 @@ foreach ($request_json['events'] as $event)
 			
 			 $result_json = json_decode($result, true);   // Decode JSON request
 				
+			if(("ประวัติมหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี"==$text) || ("ประวัติของมหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี"==$text) || ("ประวัติมหาวิทยาลับยางมด"==$text) || ("ประวัติมจธ."==$text) ){
+				$reply_message = "ประวัติของมหาวิทยาลัยพระจอมเกล้าธนบุรี" ;
 				
-				
+				$result = ('https://www.kmutt.ac.th/about-kmutt/history/')
+			 $result_json = json_decode($result, true);   // Decode JSON request
 				
 				
 			}
